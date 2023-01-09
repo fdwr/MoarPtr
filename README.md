@@ -30,7 +30,7 @@ void main()
 ## function_ptr
 This is useful for a non-owning pointer to a function.
 
-This additionally has `mut()` for obtaining a mutatable pointer (for hooking/Microsoft Detours,etc.)
+This additionally has `mut()` for obtaining a mutable pointer (for hooking/Microsoft Detours,etc.)
 
 A simple case is like so.
 ```cpp
@@ -52,7 +52,7 @@ With a custom calling convention
 ```cpp
 __stdcall int add(int a, int b)
 {
-  return a + b;
+    return a + b;
 }
 
 void main()
